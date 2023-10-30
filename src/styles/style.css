@@ -22,6 +22,8 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /* font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; */
 }
 
 a {
@@ -92,7 +94,7 @@ body {
 #banner {
     height: 100%;
     width: 100%;
-    background-image: url('/src/img/bg-4.jpg');
+    background-image: url('/MathE_LandingPage_IHC/src/img/bg-4.jpg');
     background-position: center;
     background-size: cover;
     /* Adjust to your preferred size: cover, contain, or a custom size */
@@ -129,6 +131,26 @@ body {
     left: 0;
     top: 0;
     opacity: 0.45;
+}
+
+.group_contact {
+    margin: 0 !important;
+}
+
+#main .group_contact a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0px 0;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+#main .group_contact i{
+    font-size: 1.5rem;
+    color: #8172f3;
 }
 
 #footer .row {
@@ -229,42 +251,6 @@ body {
     display: inline-block;
 }
 
-@keyframes wave-animation {
-    0% {
-        transform: rotate(0.0deg)
-    }
-
-    10% {
-        transform: rotate(14.0deg)
-    }
-
-    /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8.0deg)
-    }
-
-    30% {
-        transform: rotate(14.0deg)
-    }
-
-    40% {
-        transform: rotate(-4.0deg)
-    }
-
-    50% {
-        transform: rotate(10.0deg)
-    }
-
-    60% {
-        transform: rotate(0.0deg)
-    }
-
-    /* Reset for the last half to pause */
-    100% {
-        transform: rotate(0.0deg)
-    }
-}
-
 .btn {
     /* border: 1px solid blue; */
     width: 10rem;
@@ -284,6 +270,24 @@ body {
     background-color: var(--third-color);
 }
 
+.btn_info {
+    width: 11rem;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: #bb83f0;
+    letter-spacing: 0.5px;
+    transition: .4s;
+}
+
+.btn_info:hover {
+    background-color: #4f40c0;
+    color: whitesmoke;
+    
+}
+
 .row {
     margin: auto 0;
 }
@@ -296,8 +300,10 @@ body {
 
 #main .carousel {
     width: 100%;
-    margin: 0 auto;
+    padding: 0 !important;
 }
+
+
 
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -313,6 +319,22 @@ body {
         width: 100%;
     }
 
+    #main .group_contact a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        margin: 0 20px 0px 0;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+    }
+
+    #main .group_contact i{
+        font-size: 2rem;
+        color: #8172f3;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -323,6 +345,11 @@ body {
 
     #carouselExampleIndicators {
         width: 50% !important;
+    }
+
+    #main .carousel {
+        width: 100% !important;
+        padding: 0 !important;
     }
 }
 
@@ -345,7 +372,7 @@ body {
     }
 
     #main .carousel {
-        width: 80%;
+        width: 100% !important;
         margin: 0 auto;
     }
 }
